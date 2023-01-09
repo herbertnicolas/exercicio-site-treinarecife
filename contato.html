@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Contato</title>
-</head>
-<body>
-    <style>
-        body{
-            margin:30px;
-            padding: 30px;
-            background-image: linear-gradient(black, rgb(70, 70, 150));
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-        }
-        img{ border-radius: 50%; }
-        a{ color: rgb(0, 255, 238); }
-        h1{ color:rgb(241, 218, 12); }
-        h2{ color:rgb(138, 241, 12)}
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
     <h1>Contact me</h1>
     <ul type="square">
-        <li>📱(81)99691-7598</li>
-        <li>📩 hna@cin.ufpe.br</li>
-        <li>🌍 Recife-PE</li>
+      <li>📱(81)99691-7598</li>
+      <li>📩 hna@cin.ufpe.br</li>
+      <li>🌍 Recife-PE</li>
     </ul>
-</body>
-</html>
+ 
+    <hr />
+ 
+    <table>
+      <thead>
+        <tr>
+          <th>Send a message!</th>
+        </tr>
+      </thead>
+      <form>
 
-<a href="index.html">Home</a>
+          <tr>
+            <td id="contact-tab"><label for="nome">Nome:</label><br /></td>
+            <td id="contact-tab"><input type="text" name="nome" placeholder="Digite seu nome" /></td>
+          </tr>
+     
+          <tr>
+            <td id="contact-tab"><label for="nome">E-mail:</label><br /></td>
+            <td id="contact-tab"><input type="text" name="email" placeholder="" /></td>
+          </tr>
+     
+          <tr>
+            <td id="contact-tab"><label for="lista">Assunto:</label></td>
+            <td id="contact-tab">
+              <select>
+                <option>Orçamento</option>
+                <option>Outro</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td id="contact-tab"><label for="date">Data de entrega:</label></td>
+            <td id="contact-tab"><input type="date" /></td>
+          </tr>
+     
+          <tr></tr>
+     
+          <tr>
+            <td id="contact-tab"><label for="lista">Mensagem:</label></td>
+            <td id="contact-tab" rowspan="3" colspan="3">
+                <textarea id="story" name="story"
+                            rows="5" cols="33">
+                </textarea>
+            </td>
+          </tr>
+          <tr>
+            <td id="contact-tab" colspan="2"><input type="submit" value="Enviar"/></td>
+          </tr>
+      </form>
+
+    </table>
+  </body>
+</html>
+ 
+<button><a href="index.html">Home</a></button>
